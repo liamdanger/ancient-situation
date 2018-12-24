@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Alma Mono;
+    src: url('/static/almamono-regular-webfont.woff') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Alma Mono;
+    src: url('/static/almamono-bold-webfont.woff') format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+a {
+    color: royalblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.layout {
+    font-family: Alma Mono, 'Courier New', Courier, monospace;
+    font-size: 16px;
+
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    display: block;
+    height: auto;
+    width: 300px;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.thing-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thing-list-item {
+    text-align: center;
+    width: 250px;
+    margin: 25px;
+
+    transition: all 0.075s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+        
+        img { box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); }
+    }
+
+    img {
+        background-color: #eee;
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.hero {
+    margin-bottom: 25px;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
