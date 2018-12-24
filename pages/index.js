@@ -1,14 +1,14 @@
 import Layout from '../components/layout'
 import ThingList from '../components/thing-list'
 
+import things from '../things'
+
 const Index = () => ( 
     <Layout title="Home">
-        <p><strong>Ancient Situation</strong> is the label I put on food and drinks that I make and give out to folks.</p>
-        <p>Everything is extremely limited-run, since it has to come out of my little San Francisco kitchen.</p>
-        <p>This site documents the stuff I&rsquo;ve made under the <strong>Ancient Situation</strong> brand from 2018 on.</p>
-        <ThingList things={[
-            { title: 'Lacto-Sambal', url: '/lacto-sambal', image: '/static/lacto-sambal.jpg' },
-        ]} />
+        <p><strong>Ancient Situation</strong> a &ldquo;boutique&rdquo; <span class="quiet">(lol)</span> label for food and drinks made by <a href="http://liamcampbell.info">Liam Campbell</a>. That&rsquo;s me.</p>
+        <p>Everything is extremely limited-run, since it has to come out of my little San Francisco kitchen. Nothing is FDA-approved.</p>
+        <p>This site documents the stuff I&rsquo;ve made under the <strong>Ancient Situation</strong> name from 2018 on.</p>
+        <ThingList things={things} />
     </Layout>
 )
 

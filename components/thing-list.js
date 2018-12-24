@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const ThingListItem = ({ title, image, url }) => (
-    <li className="thing-list-item">
+    <li key="url" className="thing-list-item">
         <Link href={url}>
             <a>
                 <img width="250" height="250" src={image} />

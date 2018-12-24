@@ -12,14 +12,27 @@
 }
 
 a {
-    color: royalblue;
-    text-decoration: none;
-    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: palevioletred;
+
+    &:visited {
+        text-decoration-color: royalblue;
+    }
+
+    &:hover, &:focus {
+        text-decoration-color: goldenrod;
+    }
 }
 
 h1 {
     text-align: center;
     text-transform: uppercase;
+}
+
+.quiet {
+    color: rgba(0, 0, 0, 0.35);
 }
 
 .layout {

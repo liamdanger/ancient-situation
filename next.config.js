@@ -1,3 +1,13 @@
 // next.config.js
+const withPreact = require('@zeit/next-preact')
 const withSass = require('@zeit/next-sass')
-module.exports = withSass()
+
+const enhance = config => withPreact(withSass(config))
+
+module.exports = enhance({
+    exportPathMap: function () {
+      return {
+        '/': { page: '/' }
+      }
+    }
+  })
