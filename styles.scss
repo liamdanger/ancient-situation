@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: Alma Mono;
-    src: url('/static/almamono-bold-webfont.woff') format("woff");
+    src: url('/static/almamono-heavy-webfont.woff') format("woff");
     font-weight: bold;
     font-style: normal;
 }
@@ -37,6 +37,12 @@ h1 {
     width: 300px;
     max-width: 75%;
     margin: 0 auto;
+
+    transition: all 0.075s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .thing-list {
@@ -67,14 +73,5 @@ h1 {
         display: block;
         width: 100%;
         margin-bottom: 15px;
-    }
-}
-
-.hero {
-    margin-bottom: 25px;
-
-    img {
-        display: block;
-        width: 100%;
     }
 }
